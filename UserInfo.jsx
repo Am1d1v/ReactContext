@@ -1,8 +1,10 @@
+import UserContext from "../context/UserContext";
 
-
-function UserInfo({user}) {
+function UserInfo() {
   return (
-    <div>{user}</div>
+    <UserContext.Consumer>
+      {(value) => value}
+    </UserContext.Consumer>
   )
 }
 
