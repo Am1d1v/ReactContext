@@ -3,7 +3,8 @@ import { useContext } from "react";
 
 function UserInfo() {
 
-  const user = useContext(UserContext)
+  const {user} = useContext(UserContext)
+  console.log(user);
 
   return (
     <h1>{user}</h1>
